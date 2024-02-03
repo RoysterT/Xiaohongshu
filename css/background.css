@@ -1,0 +1,13 @@
+/* 设置背景视频样式 */
+.background{
+	/* 固定定位 */
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	/* 覆盖 */
+	min-width: 100%;
+	min-height: 100%;
+	/* 底层 */
+	z-index: -10;
+}

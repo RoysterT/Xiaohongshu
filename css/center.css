@@ -1,0 +1,142 @@
+/* 页面中部内容 */
+.center{
+	/* 样式尺寸 */
+	width: 600px;
+	height: 420px;
+	zoom:.7;
+	/* 设置居中位置 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%,-60%);
+    align-items: center;
+	/* 弹性布局 */
+    display: flex;
+}
+/* 手机div样式 */
+.phone{
+	position: absolute;
+	padding: 0;
+	width: 300px;
+	height: 600px;
+	float: left;
+	zoom: .7;
+}
+/* 手机视频样式 */
+.video{
+	position: absolute;
+	top: 17px;
+	left: -1px;
+	width: 260px;
+    height: 564px;
+	width: 100%;
+	z-index: -1;
+}
+/* 手机框框 */
+.iphone{
+	width: 100%;
+}
+/* 右侧内容 */
+.discription{
+	display: flex;
+	position: absolute;
+	left: 270px;
+	flex-direction: column;
+	width: 330px;
+}
+/* 上面大logo */
+.biglogo{
+	width: 143px;
+	height: 50px;
+}
+/* 中间文字 */
+.text{
+	font-size: 48px;
+	color: white;
+	margin-top: 13px;
+	font-weight: unset;
+	padding-bottom: 22px;
+}
+/* 二维码模块 */
+.qrcodes{
+	margin-top: 36px;
+}
+/* 圆角框框 */
+.android, .ios{
+	/* 右侧边框 */
+	margin-right: 15px;
+	/* 弹性布局 */
+	display: flex;
+	/* 左右居中 */
+	justify-content: center;
+	/* 上下居中 */
+	align-items: center;
+	/* 尺寸大小 */
+	width: 150px;
+	height: 40px;
+	/* 框框是圆角的 */
+	border-radius: 20px;
+	/* 框框的背景颜色 */
+	background-color: white;
+}
+/* 安卓二维码的圆角框框在右边 */
+.android{
+	float: right;
+}
+/* hover时下面两个角变为方角，开启相对定位 */
+.android:hover, .ios:hover{
+	border-radius: 20px 20px 0 0;
+	position: relative;
+}
+/* 圆角框框里边的安卓苹果logo */
+.qrcodes .icon{
+	font-size: 28px;
+	color: rgb(51, 51, 51);
+	margin-right: 6px;
+}
+/* 安卓圆角框框的响应 */
+.android:hover .qrcode-page-android{
+	display: block;
+}
+/* iOS圆角框框的响应 */
+.ios:hover .qrcode-page-ios{
+	display: block;
+}
+/* 圆角框框文字大小 */
+.qrcodes span{
+	font-size: 14px;
+	font-family: -apple-system,SF UI Text,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+/* 开启二维码框框定位 */
+.qrcode-wrapper{
+	position: absolute;
+}
+/* iOS的二维码框框 */
+.qrcode-page-ios{
+	position: relative;
+	top: 90px;
+	display: none;
+	background-color: white;
+	width: 150px;
+	height: 142px;
+	text-align: center;
+	/* 下边是俩圆角 */
+	border-radius: 0 0 20px 20px;
+}
+/* 安卓的二维码框框 */
+.qrcode-page-android{
+	position: relative;
+	top: 90px;
+	display: none;
+	background-color: white;
+	width: 150px;
+	height: 142px;
+	text-align: center;
+	/* 下边是俩圆角 */
+	border-radius: 0 0 20px 20px;
+}
+/* 二维码框框里的二维码尺寸 */
+.qrcode{
+	width: 134px;
+	height: 134px;
+}

@@ -1,0 +1,170 @@
+/* 头部 */
+.head{
+	width: 100%;
+	height: 106px;
+	align-items: center;
+	min-width: 1400px;
+	display: flex;
+	min-width: 1300px;
+}
+/* 左侧logo */
+.logo{
+	width: 72px;
+	height: 25px;
+	margin-left: 91px;
+	display: flex;
+}
+/* 右侧导航条 */
+.navigation-bar{
+	position: absolute;
+	right: -120px;
+	list-style-type: none;
+	justify-content: space-between;
+	margin-right: 76px;
+	padding: 0;
+	min-width: 1202px;
+}
+/* 各选项样式 */
+.navigation-bar>li,.navigation-bar>div{
+	float: left;
+	padding-left: 60px;
+	font-size: 16px;
+	font-family: PingFang SC,Helvetica,Arial,sans-serif;
+	font-weight: 500;
+}
+/* 首页按钮下面的线 */
+.current-tab{
+    position: absolute;
+    bottom: -2px;
+    content: "";
+    width: 32px;
+    height: 2px;
+    background-color: hsla(0,0%,100%,.5);
+    border-radius: 2px;
+}
+/* 创作者服务上方的浮贴 */
+.sticker{
+	/* 定位 */
+	position: absolute;
+    top: -40px;
+    left: 438px;
+	/* 尺寸 */
+	width: 106px;
+	height: 54px;
+	transform: scale(.5);
+	/* 背景 */
+	background-image: url(../img/sticker.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	/* 文字样式 */
+	font-size: 20px;
+	line-height: 44px;
+	text-align: center;
+	color: white;
+	font-weight: 500;
+}
+/* 几个选项右侧箭头，用上border实现 */
+.arrow1, .arrow2, .arrow3{
+	/* 定位 */
+	position: relative;
+	top: -12px;
+	/* 尺寸和样式 */
+	width: 0px;
+	border: 4px transparent solid;
+	border-top-color: white;
+}
+/* 每个箭头的偏移量 */
+.arrow1{
+	left: 66px;
+}
+.arrow2{
+	left: 82px;
+}
+.arrow3{
+	left: 34px;
+}
+/* 业务合作的下拉菜单栏默认样式 */
+.drop-down-wrapper1{
+	position: absolute;
+    overflow: hidden;
+    left: 240px;
+    top: 22px;
+	z-index: 20;
+	/* 动态合闭 */
+	height: 0px;
+	transition: height 0.25s ease-in-out;
+}
+/* 业务合作的下拉菜单栏合闭样式 */
+.ywhz:hover .drop-down-wrapper1{
+	display: block;
+	/* 动态展开 */
+	height: 260px;
+	transition: height 0.25s ease-in-out;
+}
+/* 创作者服务的下拉菜单栏默认样式 */
+.drop-down-wrapper2{
+	position: absolute;
+    overflow: hidden;
+    left: 386px;
+    top: 22px;
+	z-index: 20;
+	/* 动态合闭 */
+	height: 0px;
+	transition: height 0.2s ease-in-out;
+}
+/* 创作者服务的下拉菜单栏合闭样式 */
+.czzfw:hover .drop-down-wrapper2{
+	display: block;
+	/* 动态展开 */
+	height: 216px;
+	transition: height 0.2s ease-in-out;
+}
+/* 语言的下拉菜单栏默认样式 */
+.drop-down-wrapper3{
+	position: absolute;
+    overflow: hidden;
+    left: 990px;
+    top: 22px;
+	z-index: 20;
+	/* 动态合闭 */
+	height: 0px;
+	transition: height 0.05s ease-in-out;
+}
+/* 语言的下拉菜单栏合闭样式 */
+.language:hover .drop-down-wrapper3{
+	display: block;
+	/* 动态展开 */
+	height: 76px;
+	transition: height 0.05s ease-in-out;
+}
+/* 下拉菜单栏的选项框样式 */
+.drop-down-content{
+	margin-top: 30px;
+	background-color: #fff;
+	z-index: 11;
+	text-align: center;
+	overflow: hidden;
+	border-radius: 10px;
+}
+/* 下拉菜单栏的选项样式 */
+.menu{
+	margin-right: -1px;
+	display: block;
+	white-space: nowrap;
+	color: #333;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 16px;
+	padding: 15px 30px;
+	cursor: pointer;
+}
+/* 下拉菜单栏的选项hover时修改背景颜色 */
+.menu:hover{
+	background-color: rgb(245, 245, 245);
+}
+/* 下拉菜单栏的选项链接样式 */
+.menulink{
+	text-decoration: none;
+	color: black;
+
+}
